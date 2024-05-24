@@ -27,5 +27,13 @@ namespace Paper.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("Book")] // TODO: Make this a route request?
+        public IActionResult DeleteWorkbook([FromQuery] string workbookId) // Here we will need to add a payload of what needs to be stored. IE, the vector spaces etc
+        {
+            // This will be a _SOFT_ delete.
+
+            return Ok();
+        }
     }
 }
